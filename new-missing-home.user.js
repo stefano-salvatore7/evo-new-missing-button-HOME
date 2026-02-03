@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name          EVO - Bottone Timbrature Mancanti (HOME)
 // @namespace     https://unibo.it/
-// @version       1.0
+// @version       1.1
 // @description   Aggiunge il bottone "Timb. Mancanti" accanto a "TeleLavoro" (o al posto suo se assente) nel titolo "Timbrature di giornata" nella Home
 // @author        Stefano
 // @match         https://personale-unibo.hrgpi.it/*
@@ -50,7 +50,7 @@
         const form = document.createElement('form');
         form.name = 'MissingClockingsList';
         form.method = 'POST';
-        form.action = '/jt-employee-portal/anomalieTimbratureElenco.do';
+        form.action = '/jt-employee-portal/movimentimenu.do';
         form.style.display = 'inline-block';
         form.style.marginLeft = '5px';
 
